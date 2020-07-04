@@ -1,6 +1,6 @@
 # AngularLab
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.
+Creating an Angular application that displays to-dos.
 
 ## Development server
 
