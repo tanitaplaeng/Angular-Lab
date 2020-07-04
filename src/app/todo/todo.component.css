@@ -1,0 +1,69 @@
+h1 { 
+    margin: 8px 0px;
+    padding: 0;
+}
+
+h4 { 
+    padding: 0;
+    margin: 0;
+}
+
+.todo-list {
+    margin: 20%;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    padding: 20px;
+    font-family: Open Sans;
+    font-size: 14px;
+}
+
+.todo-filter,
+.todo-add {
+    width: 99%;
+    height: 25px;
+    font-size: 16px;
+    margin-top: 4px;
+}
+
+.todo-item {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.item-task { 
+    padding: 5px 0px;
+    margin: 0px 5px;
+}
+
+.complete-btn { 
+    background-color: white;
+    color: #ff69b4;
+    border: 1px solid #ff69b4;
+    border-radius: 5px;
+    margin: 0px 5px;
+    display: flex; 
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.add-btn { 
+    background-color: #ff1493; 
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 5px 0px;
+    cursor: pointer;
+}
+
+.remove-btn { 
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}

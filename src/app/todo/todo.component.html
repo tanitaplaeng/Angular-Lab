@@ -1,0 +1,27 @@
+<div class="todo-list">
+    <h1>TODO List</h1>
+    <h4>A Place To Store Your Todos</h4>
+    <input type="text" 
+        class="todo-filter" 
+        placeholder="Filter Your Todos" 
+        [(ngModel)]="filterInput" 
+        (input)="filterToDo()"/>
+    <div class="to-do">
+        <div class="todo-item" 
+            *ngFor="let item of filteredToDoArray; let i = index"> {{i + 1}}.
+            <button *ngIf="!item.completed" 
+                (click)="item.completed = true" 
+                class="complete-btn">Complete</button>
+            <div class="item-task" 
+                [ngStyle]="{'text-decoration': item.completed ? 'line-through' : 'none'}"> {{ item.task }} </div>
+            <button class="remove-btn" 
+                (click)="removeTask(item, i)"><i class="fa fa-times-circle" aria-hidden="true"></i></button>
+        </div>
+    </div>
+    <input type="text" 
+        class="todo-add" 
+        placeholder="Add your to-do" 
+        [(ngModel)]="value">
+    <button class="add-btn" 
+        (click)="addTask()">Add</button>
+</div>
